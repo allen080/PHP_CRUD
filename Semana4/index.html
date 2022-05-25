@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro</title>
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link type="text/css" rel="stylesheet" href="estilos/style.css"/>
+    </head>
+    <body>
+        <header class="w3-container w3-teal" style="height:50px">
+            <h3>Cadastrar no Sistema</h3>
+        </header>
+        <br/>
+        
+        <main class="w3-container w3-half w3-display-middle principal" style="font-size:14px">
+            <form class="w3-container" action="cadastro.php" method="post">
+                <div class="w3-section" style="padding-top:35px;">
+                    <label for="nome"><b>Nome</b></label>
+                    <input autofocus required class="campoReq w3-input w3-border w3-margin-bottom" type="text" placeholder="Digite seu Nome" name="nome" id="nome" />
+                    
+                    <label for="email"><b>E-mail</b></label>
+                    <input required class="campoReq w3-input w3-border w3-margin-bottom" type="email" placeholder="Digite seu email" name="email" id="email" />
+                    
+                    <label for="data"><b>Data de Nascimento</b></label>
+                    <input required class="campoReq w3-input w3-border w3-margin-bottom" type="date" placeholder="Digite sua data de nascimento" name="dataNasc" id="dataNasc" />
+
+                    <label for="cpf"><b>CPF</b></label>
+                    <input required class="campoReq w3-input w3-border w3-margin-bottom" type="text" placeholder="Digite seu CPF" name="cpf" id="cpf" />
+                    
+                    <label for="senha"><b>Senha</b></label>
+                    <input required class="campoReq campoSenha w3-input w3-border" type="password" placeholder="Digite sua senha" name="senha" id="senha" />
+                    <input required class="campoReq campoSenha w3-input w3-border" type="password" placeholder="Repita sua senha" name="senha_rep" id="senha_rep" />
+                    <p id="senha_info"></p>
+
+                    <input class="w3-check" type="checkbox" name="opcao" id="opcao" />
+                    <label for="opcao">Exibir senhas</label>
+
+                    <button class="w3-button w3-block w3-section w3-teal w3-padding w3-ripple" type="button">Login</button>
+                    <div class="w3-align-bottom" style="font-size:17px" id="resposta"></div>
+
+                </div>
+            </form>
+        </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/md5.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/organizarDados.js"></script>
+        <noscript>
+            Seu navegador não suporta código em JavaScript
+        </noscript>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+header {
+    text-align:center;
+}
+.principal {
+    margin-top:10px;
+}
+#senha_rep {
+    margin-top:10px;
+}
+#senha_info {
+    font-weight:bold;
+}
+#resposta {
+    color:red;
+    font-weight:bold;
+    text-align:center;
+}
